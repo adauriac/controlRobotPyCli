@@ -730,8 +730,9 @@ class ICNC2:
         """
         Absolute position movement with speed profile
         """
-        self.notImplemented()
-        return -1
+        myInt = ctypes.c_int(0)
+        ans = self.ICNC2Lib._ICNC_MoveProfileAbsBuf(Axis, Speed, PositionX, PositionY, PositionZ, PositionA, PositionB,ctypes.byref(myInt)) # output param: *BufferRequired=NULL 
+        return ans,myInt
 
     def PushPulsesData (self,  nbBytes,  Frequency): # output param: unsigned char *ptBuffer   *BufferRequired=NULL
         """
@@ -808,6 +809,7 @@ class ICNC2:
         """
         Que faire si une fonction non implemented est appelee.
         """
+        print("the called function is not yet implemented")
         sys.exit(-1)
         return -1
 
