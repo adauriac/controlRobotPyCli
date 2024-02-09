@@ -1,5 +1,8 @@
 import ctypes,sys
 
+def help(x):
+    print(x.__doc__)
+
 class ICNC2:
     EVENT_MANUALCONTROL  = 0
     EVENT_STARTPROCESS   = 1
