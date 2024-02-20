@@ -1,5 +1,10 @@
 import ctypes,sys
 
+"""
+appel /C/Users/ACXYS/Downloads/python-3.12.1-embed-win32/python ICNC2.py
+ou
+python32 ICNC2.py
+"""
 class ICNC2:
 	EVENT_MANUALCONTROL  = 0
 	EVENT_STARTPROCESS   = 1
