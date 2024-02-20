@@ -1,9 +1,12 @@
 import ctypes,sys
 
 """
-appel /C/Users/ACXYS/Downloads/python-3.12.1-embed-win32/python ICNC2.py
-ou
-python32 ICNC2.py
+appel depuis msys2:
+  /C/Users/ACXYS/Downloads/python-3.12.1-embed-win32/python -i ICNC2.py
+  ou
+  python32 ICNC2.py
+appel depuis powershell:
+  C:\Users\ACXYS\Downloads\python-3.12.1-embed-win32\python.exe  -i .\ICNC2.py
 """
 class ICNC2:
 	EVENT_MANUALCONTROL  = 0
