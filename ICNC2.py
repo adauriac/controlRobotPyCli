@@ -6,8 +6,9 @@ appel depuis msys2:
   ou
   python32 ICNC2.py
 appel depuis powershell:
-  C:\Users\ACXYS\Downloads\python-3.12.1-embed-win32\python.exe  -i .\ICNC2.py
+  C:\\Users\\ACXYS\\Downloads\\python-3.12.1-embed-win32\\python.exe  -i .\\ICNC2.py
 """
+
 class ICNC2:
 	EVENT_MANUALCONTROL  = 0
 	EVENT_STARTPROCESS   = 1
