@@ -830,3 +830,5 @@ if __name__ == "__main__":
         print("connection : ",i.Connect())
         status = i.ICNC_STATUS_BOARD_STATUS | i.ICNC_STATUS_BUFFER_FREE | i.ICNC_STATUS_ACTUALX | i.ICNC_STATUS_ACTUALY | i.ICNC_STATUS_ACTUALZ
         print("board status : ",i.GetBoardStatus(status))
+        print("you can use the class i, for example dir(i)")
+        
